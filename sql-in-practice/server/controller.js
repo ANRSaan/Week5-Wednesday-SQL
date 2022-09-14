@@ -24,7 +24,7 @@ module.exports = {
         JOIN cc_employees AS e ON e.emp_id = ea.emp_id
         JOIN cc_users AS u ON e.user_id = u.user_id
         WHERE a.approved = true AND a.completed = false
-        ORDER BY a.date desc;`)
+        ORDER BY a.date DESC;`)
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
     },
