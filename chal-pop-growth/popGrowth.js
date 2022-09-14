@@ -7,7 +7,7 @@
 const popCalc = (pop, growth, newFolks, target) => {
     let years = 0
     while (pop < target){
-      pop += (pop *(0.01 * growth) + newFolks)
+      pop += (pop * (0.01 * growth) + newFolks)
       years++
     }
     return years
